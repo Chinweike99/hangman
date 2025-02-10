@@ -16,7 +16,7 @@ const HangmanKeyboard = ({
   activeLetters,
   inactiveLetters,
   addGuessedLetter,
-  disabled = false,
+  // disabled = false,
 }: KeyboardProps) => {
   return (
     <div
@@ -35,7 +35,7 @@ const HangmanKeyboard = ({
             className={`${styles.btn} ${isActive ? styles.active : ""} ${
               isInactive ? styles.inactive : ""
             }`}
-            disabled={isInactive || isActive || disabled}
+            
             key={key}
           >
             {key}
